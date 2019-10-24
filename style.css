@@ -80,15 +80,15 @@ a {
     font-family: Raleway, Verdana, Arial, sans-serif;
     text-decoration: none;
 }
+a:hover {
+    color: white;
+}
+a:visited {
+    color: white;
+}
 a[href^=mailto] {
     font-weight: bold;
     font-size: 1em;
-}
-a:visited {
-  color: rgb(244, 67, 54);
-}
-a:hover {
-    color: purple;
 }
 b {
     font-weight: bold;
@@ -145,7 +145,7 @@ b {
     width: 49%;
 }
 .hero-image {
-    background-image: url("./images/hero.png");
+    background-image: url("./images/boys.jpg");
     min-height: 768px;
     border-radius: 15px;
 }
@@ -172,4 +172,16 @@ b {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+.navright {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 4px;
+    text-decoration: none;
+    margin: 5px 0 0 0;
+}
+.rightEdge {
+    margin: 5px 5px 0 0;
 }
