@@ -5,6 +5,11 @@ background color: rgb(176,190,197)
 section color: rgb(120,144,156)
 heading and subheading color:  rgb(69,90,100) */
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 html {
     font-size: 16px;
 }
@@ -15,6 +20,9 @@ p {
     font-weight: 400;
     line-height: 1.4em;
     font-family: Raleway, Verdana, Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 10px 10px;
 }
 h1 {
     font-family: 'Amatic SC', Verdana, Arial, sans-serif;
@@ -25,7 +33,6 @@ h1 {
     margin: 5px;
     padding-left: 10px;
     background-color: rgb(69,90,100);
-    border-radius: 15px;
 }
 h2 {
     font-family: Quicksand, Verdana, Arial, sans-serif;
@@ -34,8 +41,6 @@ h2 {
     line-height: 1.863em;
     margin: 0;
     padding-left: 10px;
-    background-color: rgb(120,144,156);
-    border-radius: 15px;
 }
 h3 {
     font-family: Quicksand, Verdana, Arial, sans-serif;
@@ -45,30 +50,10 @@ h3 {
     background-color: rgb(69,90,100);
     border-radius: 15px;
 }
-li {
-    font-family: Raleway, Verdana, Arial, sans-serif;
-    font-weight: 300;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
 address {
     font-family: Raleway, Verdana, Arial, sans-serif;
     font-size: .8em;
     line-height: 1.3em;
-}
-ul {
-    border: 1px dashed black;
-    border-radius: 15px;
-    padding: 10px;
-    list-style-type: none;   
-}
-ol {
-    border: 1px dashed black;
-    border-radius: 15px;
-    padding: 15px;
-    max-width: 400px;
-    list-style-position: inside; 
 }
 figcaption {
     font-family: Raleway, Verdana, Arial, sans-serif;
@@ -76,112 +61,86 @@ figcaption {
     font-size: 0.8em;
     font-style: italic;
 }
-a {
-    font-family: Raleway, Verdana, Arial, sans-serif;
-    text-decoration: none;
-}
-a:hover {
+footer {
+    min-height: 75px;
+    background-color: rgb(120,144,156, .6);
+    display: block;
     color: white;
-}
-a:visited {
-    color: white;
-}
-a[href^=mailto] {
-    font-weight: bold;
-    font-size: 1em;
+    align-content: center;
+
 }
 b {
     font-weight: bold;
 }
-#container {
-    max-width: 1280px;
+.header {
+    width: 1280px;
+    height: 800px;
+    background-image: url(./images/boys.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: auto;
-}
-.swatches {
-    display: block;
-    height: 4em;
-    margin-bottom: 0.3em;
-    border-radius: 5px;
-    box-sizing: border-box;
-    list-style: none;
-}
-.backgroundColor {
-    background-color: rgba(176,190,197, 0.2);
-}
-.headingColorDark {
-    background-color: rgb(69,90,100);
-}
-.headingColorLight {
-    background-color: rgb(120,144,156);
-}
-.accentColorDark {
-    background-color: rgb(244, 67, 54);
-}
-.accentColorLight {
-    background-color: rgb(229, 115, 115);
-    color: #fff;
-}
-.accentFont {
-    font-family: 'Amatic SC', Verdana, Arial, sans-serif;
-    font-size: 24px;
-}
-.headingFont {
-    font-family: Quicksand, Verdana, Arial, sans-serif;
-}
-.normalFont {
-    font-family: Raleway, Verdana, Arial, sans-serif;
-}
-.stylebookList {
-        display: flex;
-        font-size: 14px;
-        max-width: 500px;
-}
-.stylebookListItem {
-    max-width: 150px;
 }
 .biography {
     margin: 0px;
     display: inline-block;
-    width: 49%;
 }
-.hero-image {
-    background-image: url("./images/boys.jpg");
-    min-height: 768px;
-    border-radius: 15px;
+.heroText {
+    float: right;
+    font-size: 50px;
+    font-family: 'Amatic SC', Verdana, Arial, sans-serif;
+    font-weight: 700;
+    margin: 30px 30px;
 }
-.hero-text {
+.howTo {
+    background-color: rgb(120,144,156, .6);
+    column-count: 2;
+}
+.howToPicture {
+    column-span: 1;
+}
+.howToList {
+    column-span: 1;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: Raleway, Verdana, Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 10px 10px;
+}
+.bio {
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: Raleway, Verdana, Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 10px 10px;
+}
+.nav .navbar {
+    width: 100%;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    color: white; 
 }
-.navbar {
+.navbar li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(69,90,100);
-}
-.navlink {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Amatic SC', Verdana, Arial, sans-serif;
+    cursor: pointer;
     text-decoration: none;
+    font-weight: bold;
 }
-.navright {
+.navlink a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar .navright {
     float: right;
     display: block;
-    color: white;
     text-align: center;
-    padding: 14px 4px;
-    text-decoration: none;
-    margin: 5px 0 0 0;
+    padding: 15px 10px;
 }
-.rightEdge {
-    margin: 5px 5px 0 0;
+.navbar li:hover {
+    background: rgba(129,125,125, .2);
 }
