@@ -35,9 +35,9 @@ h1 {
     background-color: rgb(69,90,100);
 }
 h2 {
-    font-family: Quicksand, Verdana, Arial, sans-serif;
+    font-family: 'Amatic SC', Verdana, Arial, sans-serif;
     font-size: 1.563em;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.863em;
     margin: 0;
     padding-left: 10px;
@@ -48,7 +48,6 @@ h3 {
     padding-left: 10px;
     color: rgb(236,239,241);
     background-color: rgb(69,90,100);
-    border-radius: 15px;
 }
 address {
     font-family: Raleway, Verdana, Arial, sans-serif;
@@ -57,9 +56,10 @@ address {
 }
 figcaption {
     font-family: Raleway, Verdana, Arial, sans-serif;
-    font-weight: 400;
     font-size: 0.8em;
     font-style: italic;
+    font-weight: bold;
+    align-self: left;
 }
 footer {
     min-height: 75px;
@@ -69,8 +69,18 @@ footer {
     align-content: center;
 
 }
+ul {
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+hr {
+    margin: 0px 0px 0px 5px;
+}
 b {
     font-weight: bold;
+}
+ol li {
+    margin: 35px 0px;
 }
 .header {
     width: 1280px;
@@ -82,11 +92,12 @@ b {
     margin: auto;
 }
 .biography {
-    margin: 0px;
+    margin: 50px 0 25px 0;
     display: inline-block;
+    font-family: 'Amatic SC', Verdana, Arial, sans-serif;
 }
 .heroText {
-    float: right;
+    float: left;
     font-size: 50px;
     font-family: 'Amatic SC', Verdana, Arial, sans-serif;
     font-weight: 700;
@@ -95,9 +106,14 @@ b {
 .howTo {
     background-color: rgb(120,144,156, .6);
     column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    height: 600px;
+    display: flex;
 }
 .howToPicture {
     column-span: 1;
+    min-width: 600px;
 }
 .howToList {
     column-span: 1;
@@ -107,14 +123,15 @@ b {
     font-size: 20px;
     padding: 10px 30px;
     margin: 10px 10px;
+    min-width: 600px;
 }
 .bio {
     font-weight: 400;
     line-height: 1.4em;
     font-family: Raleway, Verdana, Arial, sans-serif;
     font-size: 20px;
-    padding: 10px 30px;
-    margin: 10px 10px;
+    padding: 0px 30px;
+    margin: 0px 10px;
 }
 .nav .navbar {
     width: 100%;
@@ -124,7 +141,7 @@ b {
     list-style-type: none;
     display: inline-block;
     padding: 15px 30px;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     font-family: 'Amatic SC', Verdana, Arial, sans-serif;
     cursor: pointer;
